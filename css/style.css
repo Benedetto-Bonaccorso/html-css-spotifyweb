@@ -155,7 +155,7 @@ body{
 
 .body-header{
     position: fixed;
-    z-index: 0;
+    z-index: 2;
     top: 0;
     right: 0;
     height: 5rem;
@@ -236,11 +236,30 @@ body{
 
 .card{
     width: calc(50px + 10vw);
+    position: relative;
+}
+
+.card:hover>a>.album-picture{
+    filter: brightness(40%);
 }
 
 .card>a{
     text-decoration: none;
 }
+
+.song-play{
+    width: 30%;
+    position: absolute;
+    z-index: 1;
+    right:34%;
+    top: 30%;
+    filter: invert(100%);
+}
+
+.card:not(:hover)>a>.song-play{
+    display: none;
+}
+
 
 .title,
 .subtitle{
