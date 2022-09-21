@@ -14,32 +14,38 @@
             <div class="sidebar">
 
                 <div class="sidebar-top">
-                    <div class="logo-big">
+                    <div class="logo-big collapsible">
                         <a href="#"><img src="./img/logo.svg" alt=""></a>
+                    </div>
+
+                    <div class="logo-small">
+                        <a href="#">
+                            <img src="./img/logo-small.svg" alt="">
+                        </a>
                     </div>
 
                     <div class="sections">
                         <div class="section emphasized">
                             <a href="#">
                                 <img src="./img/home.svg" class="home svg" alt="">
-                                <p>Home</p>
+                                <p class="collapsible">Home</p>
                             </a>
                         </div>
-                        <div class="section emphasized">
+                        <div class="section">
                             <a href="#">
                                 <img src="./img/search.svg" class="search svg" alt="">
-                                <p>Cerca</p>
+                                <p class="collapsible">Cerca</p>
                             </a>
                         </div>
-                        <div class="section emphasized">
+                        <div class="section">
                             <a href="#">
                                 <img src="./img/libreria.svg" class="library svg" alt="">
-                                <p>La tua libreria</p>
+                                <p class="collapsible">La tua libreria</p>
                             </a>
                         </div>
                     </div>
 
-                    <div class="playlists">
+                    <div class="playlists collapsible">
 
                         <h5>PLAYLIST</h5>
                         <div class="create-playlist">
@@ -68,12 +74,12 @@
                     <div class="call-to-action">
                         <a href="#">
                             <img src="./img/circle-info-solid.svg" class="svg svg-gray" alt="">
-                            <p>Installa App</p>
+                            <p class="collapsible">Installa App</p>
                         </a>
                     </div>
                     <div class="user">
                         <img src="./img/user-regular.svg" class="svg" alt="">
-                        <p class="user-name">John Doe</p>
+                        <p class="user-name collapsible">John Doe</p>
                     </div>
                 </div>
 
@@ -93,25 +99,124 @@
                         </div>
                         <div class="link">
                             <a href="#"><h5>podcast</h5></a>
-                            <div class="selected"></div>
                         </div>
                         <div class="link">
                             <a href="#"><h5>classifiche</h5></a>
-                            <div class="selected"></div>
                         </div>
                         <div class="link">
                             <a href="#"><h5>generi e mood</h5></a>
-                            <div class="selected"></div>
                         </div>
                         <div class="link">
                             <a href="#"><h5>nuove uscite</h5></a>
-                            <div class="selected"></div>
                         </div>
                         <div class="link">
                             <a href="#"><h5>scopri</h5></a>
-                            <div class="selected"></div>
                         </div>
                     </div>
+
+                    <div class="album-section">
+
+                        <h1 class="section-title no-subtitle">Recently Played</h1>
+
+                        <div class="recently-played">
+
+                            <div class="card">
+                                <a href="#">
+                                    <img src="./img/einaudi.jpeg" alt="">
+                                    <h4 class="title">Einaudi</h4>
+                                    <p class="subtitle">Subtitle</p>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="#">
+                                    <img src="./img/einaudi.jpeg" alt="">
+                                    <h4 class="title">Einaudi</h4>
+                                    <p class="subtitle">Subtitle</p>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="#">
+                                    <img src="./img/einaudi.jpeg" alt="">
+                                    <h4 class="title">Einaudi</h4>
+                                    <p class="subtitle">Subtitle</p>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="#">
+                                    <img src="./img/einaudi.jpeg" alt="">
+                                    <h4 class="title">Einaudi</h4>
+                                    <p class="subtitle">Subtitle</p>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="#">
+                                    <img src="./img/einaudi.jpeg" alt="">
+                                    <h4 class="title">Einaudi</h4>
+                                    <p class="subtitle">Subtitle</p>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="#">
+                                    <img src="./img/einaudi.jpeg" alt="">
+                                    <h4 class="title">Einaudi</h4>
+                                    <p class="subtitle">Subtitle</p>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="album-section">
+
+                        <h1 class="section-title">Creato per John Doe</h1>
+                        <h4 class="section-subtitle">Più ascolti, più accurati saranno i suggerimenti</h4>
+
+                        <div class="recently-played">
+
+                            <div class="card">
+                                <a href="#">
+                                    <img src="./img/einaudi.jpeg" alt="">
+                                    <h4 class="title">Einaudi</h4>
+                                    <p class="subtitle">Subtitle</p>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="#">
+                                    <img src="./img/einaudi.jpeg" alt="">
+                                    <h4 class="title">Einaudi</h4>
+                                    <p class="subtitle">Subtitle</p>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="album-section last-section">
+
+                        <h1 class="section-title">Artisti più popolari</h1>
+                        <h4 class="section-subtitle">Più ascolti, più accurati saranno i suggerimenti</h4>
+
+
+                        <div class="recently-played">
+
+                            <div class="card">
+                                <a href="#">
+                                    <img src="./img/einaudi.jpeg" class="rounded" alt="">
+                                    <h4 class="title">Einaudi</h4>
+                                    <p class="subtitle">Subtitle</p>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="#">
+                                    <img src="./img/einaudi.jpeg" class="rounded" alt="">
+                                    <h4 class="title">Einaudi</h4>
+                                    <p class="subtitle">Subtitle</p>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    
                 </div>
 
             </div>

@@ -54,9 +54,13 @@ img{
     text-decoration: none;
 }
 
-.sections>.emphasized>a:hover{
+.sections>.emphasized>a{
     color: white;
     border-left: 3px solid greenyellow;
+}
+
+.section>a:hover{
+    color: white;
 }
 
 /* position */
@@ -90,6 +94,10 @@ img{
 
 .playlist-names>a{
     text-decoration: none;
+}
+
+.playlist-names>a>p:hover{
+    color: white;
 }
 
 .playlist-names>a>p{
@@ -163,7 +171,6 @@ img{
 }
 
 .albums-container{
-
     height: 100vh;
     width: calc(100vw - 12rem);
     overflow: scroll;
@@ -174,6 +181,7 @@ img{
     justify-content: center;
     gap: 2vw;
     margin-top: 5.5rem;
+    flex-wrap: wrap;
 }
 
 .navbar>.link>a{
@@ -193,13 +201,65 @@ img{
     color: white;
 }
 
-.navbar>.link:hover>.selected{
+.navbar>.link>.selected{
     margin-top: 5px;
     width: 35px;
     background-color: greenyellow;
     height: 3px;
 }
 
+.section-title{
+    color: white;
+    margin-left: 1rem;
+}
+
+.no-subtitle{
+    margin-bottom: 2rem;
+}
+
+.section-subtitle{
+    color: gray;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+.recently-played{
+    margin: 1rem;
+    display: flex;
+    justify-content:left;
+    gap: 1rem;
+}
+
+.card{
+    width: calc(50px + 10vw);
+}
+
+.card>a{
+    text-decoration: none;
+}
+
+.title,
+.subtitle{
+    text-decoration: none;
+    margin-top: 0.3rem;
+    text-align: center;
+}
+
+.title{
+    color: white;
+}
+
+.subtitle{
+    color: gray;
+}
+
+.rounded{
+    border-radius: 500px;
+}
+
+.last-section{
+    padding-bottom: 5rem;
+}
 
 .player,
 .current-song,
@@ -315,4 +375,59 @@ img{
 
 .play-button{
     width: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .recently-played{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 481px) {
+
+    .logo-small{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .logo-small{
+        padding-left: 1rem;
+        text-align: center;
+        display: inline;
+    }
+
+    .logo-small>a>img{
+        width: 2rem;
+    }
+    
+    .collapsible{
+        visibility: hidden;
+    }
+
+    .sidebar{
+        width: 4rem;
+    }
+
+    .body-header,
+    .app-body{
+        width: calc(100% - 3rem);
+    }
+
+    .albums-container{
+        width: 100%;
+    }
+
+    .recently-played{
+        justify-content: center;
+    }
+
+    .current-song-info{
+        margin-right: 0;
+    }
+
+    .song-icons{
+        flex-direction: column;
+    }
 }
