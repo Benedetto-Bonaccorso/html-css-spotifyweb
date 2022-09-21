@@ -120,6 +120,15 @@ img{
     display: inline;
 }
 
+
+
+
+
+
+
+
+
+
 .user{
     margin-top: 1rem;
     padding-top: 1rem;
@@ -408,6 +417,7 @@ img{
 
     .sidebar{
         width: 4rem;
+        height: 100vh;
     }
 
     .body-header,
@@ -419,10 +429,6 @@ img{
         width: 100%;
     }
 
-    .recently-played{
-        justify-content: center;
-    }
-
     .current-song-info{
         margin-right: 0;
     }
@@ -430,4 +436,20 @@ img{
     .song-icons{
         flex-direction: column;
     }
+
+    .sidebar-bottom{
+        margin-top: 0;
+    }
+
+    .user{
+        margin: 0;
+        padding: 0;
+        gap: 0;
+        border-top: 0;
+    }
+
+    .card{
+        width: 45%;
+    }
+
 }
