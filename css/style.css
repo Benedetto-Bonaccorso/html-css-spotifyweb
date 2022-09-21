@@ -24,6 +24,7 @@ body{
     background-color: black;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     color: white;
     height: calc(100vh - 5rem);
 }
@@ -111,7 +112,6 @@ body{
 }
 
 .sidebar-bottom{
-    margin-top: 5rem;
     margin-left: 1rem;
 }
 
@@ -123,15 +123,6 @@ body{
     color: gray;
     display: inline;
 }
-
-
-
-
-
-
-
-
-
 
 .user{
     margin-top: 1rem;
@@ -357,13 +348,15 @@ body{
     width: 5vw;
     height: 3px;
     background-color: gray;
+    display: flex;
 }
 
 .played-time,
 .current-volume{
     height: 3px;
-    width: 30%;
+    width: 28%;
     background-color: aliceblue;
+
 }
 
 .song-icons>a{
@@ -460,4 +453,21 @@ body{
         width: 45%;
     }
 
+}
+
+@media screen and (max-height: 690px){
+    .sections{
+        margin-top: 0.5rem;
+    }
+
+    .section>a>img{
+        width: 20px;
+        margin:0.3rem;
+        margin-left: 1rem;
+        margin-right: 0.5rem;
+    }
+
+    .playlist-names>a>p{
+        margin-top: 0.5rem;
+    }
 }
