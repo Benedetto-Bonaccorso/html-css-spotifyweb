@@ -54,10 +54,11 @@ img{
     text-decoration: none;
 }
 
-.sections>.emphasized>a{
+.sections>.emphasized>a:hover{
     color: white;
     border-left: 3px solid greenyellow;
 }
+
 /* position */
 .section>a>p,
 .section>a>img{
@@ -160,13 +161,45 @@ img{
     text-decoration: none;
     font-size: 13px;
 }
-.time-bar
-.esempio{
-    background-color: aqua;
+
+.albums-container{
+
     height: 100vh;
     width: calc(100vw - 12rem);
     overflow: scroll;
 }
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 5.5rem;
+}
+
+.navbar>.link>a{
+    color: gray;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.navbar>.link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar>.link:hover>a{
+    color: white;
+}
+
+.navbar>.link:hover>.selected{
+    margin-top: 5px;
+    width: 35px;
+    background-color: greenyellow;
+    height: 3px;
+}
+
 
 .player,
 .current-song,
