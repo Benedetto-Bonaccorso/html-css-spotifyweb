@@ -16,18 +16,17 @@ img{
 
 .app-container{
     height: 100vh;
-    display: flex;
+    
 }
 
 .sidebar{
-    z-index: 1;
+    z-index: 2;
     width: 12rem;
     background-color: black;
     display: flex;
     flex-direction: column;
     color: white;
-    position: fixed;
-    height: 100vh;
+    height: 100%;
 }
 
 .sidebar-top{
@@ -64,7 +63,7 @@ img{
     color: white;
     border-left: 3px solid greenyellow;
 }
-
+/* position */
 .section>a>p,
 .section>a>img{
     display: inline;
@@ -138,22 +137,36 @@ img{
     display: inline;
 }
 
-.app-body{
+.app-container{
     height: 100vh;
     background-color: var(--body-blue);
+    overflow: scroll;
+}
+
+.app-body{
+    width: 100vw;
 }
 
 .body-header{
     position: fixed;
+    z-index: 0;
     top: 0;
     right: 0;
-    width: 100vw;
-    z-index: 0;
     height: 5rem;
     background-color: rgba(0, 0, 0, 0.5);
+    text-align: right;
+    padding-top: 1.7rem;
+    width: calc(100% - 12rem);
 }
 
-
+.body-header>.button{
+    padding: 0.6rem 2rem;
+    border: 1px solid white;
+    border-radius: 150px;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
 
 
 .player,
@@ -175,7 +188,6 @@ img{
     bottom: 0;
     left: 0;
     width: 100vw;
-
     justify-content: space-between;
     align-items: center;
 }
