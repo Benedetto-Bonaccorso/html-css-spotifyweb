@@ -27,6 +27,7 @@ body{
     justify-content: space-between;
     color: white;
     height: calc(100vh - 5rem);
+    overflow: scroll;
 }
 
 .sidebar-top{
@@ -122,6 +123,10 @@ body{
 .sidebar-bottom>.call-to-action>a>*{
     color: gray;
     display: inline;
+}
+
+.sidebar-bottom>.call-to-action>a>*:hover{
+    color: white;
 }
 
 .user{
@@ -495,4 +500,5 @@ body{
     .playlist-names>a>p{
         margin-top: 0.5rem;
     }
+
 }
