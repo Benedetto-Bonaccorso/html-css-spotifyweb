@@ -93,6 +93,10 @@ body{
     display: inline;
 }
 
+.create-playlist>a:hover{
+    color: white;
+}
+
 .create-playlist>a>h6{
     display: inline;
     font-size: smaller;
@@ -177,6 +181,10 @@ body{
     color: white;
     text-decoration: none;
     font-size: 13px;
+}
+
+.body-header>.button:hover{
+    padding: 0.8rem 2.5rem;
 }
 
 .albums-container{
@@ -361,6 +369,19 @@ body{
     width: 30vw;
     margin: 0 1rem;
     background-color: gray;
+    display: flex;
+    align-items: center;
+}
+
+.time-bar:not(:hover)>.bar-knob{
+    display: none;
+}
+
+.bar-knob{
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+    background-color: aliceblue;
 }
 
 .volume{
@@ -373,6 +394,11 @@ body{
     height: 3px;
     background-color: gray;
     display: flex;
+    align-items: center;
+}
+
+.volume-bar:not(:hover)>.bar-knob{
+    display: none;
 }
 
 .played-time,
