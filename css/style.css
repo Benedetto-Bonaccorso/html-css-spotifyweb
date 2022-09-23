@@ -155,7 +155,7 @@ body{
 }
 
 .app-container{
-    height: 100vh;
+    height: calc(100vh - 5rem);
     width: 100vw;
     background-color: var(--body-blue);
     display: flex;
@@ -188,7 +188,7 @@ body{
 }
 
 .albums-container{
-    height: 100vh;
+    height: calc(100vh - 5rem);
     width: calc(100vw - 12rem);
     overflow: auto;
 }
@@ -291,10 +291,6 @@ body{
 
 .rounded{
     border-radius: 500px;
-}
-
-.last-section{
-    padding-bottom: 5rem;
 }
 
 .player,
