@@ -27,7 +27,7 @@ body{
     justify-content: space-between;
     color: white;
     height: calc(100vh - 5rem);
-    overflow: hidden;
+    overflow: auto;
 }
 
 .sidebar-top{
@@ -78,7 +78,7 @@ body{
 .playlists{
     margin: 1rem;
 }
-
+.song-icons,
 .create-playlist>a{
     color: gray;
     text-decoration: none;
@@ -322,7 +322,7 @@ body{
 }
 
 .current-song-info{
-    margin-right: 2rem;
+    margin-right: 0.5rem;
 }
 
 .current-song{
@@ -411,6 +411,11 @@ body{
 
 .song-icons>a{
     margin: 0.5rem;
+    margin-left: 0;
+}
+
+.song-icons>a>img{
+    min-width: 1rem;
 }
 
 .icons>a{
