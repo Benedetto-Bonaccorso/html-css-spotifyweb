@@ -133,6 +133,10 @@ body{
     color: white;
 }
 
+.upgrade-button{
+    margin-right: 1rem;
+}
+
 .user{
     margin-top: 1rem;
     padding-top: 1rem;
